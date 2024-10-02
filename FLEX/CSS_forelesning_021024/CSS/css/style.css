@@ -40,6 +40,10 @@ nav ul{
     gap: 1rem;
 }
 
+nav ul a{
+    color:rgb(0, 0, 0);
+}
+
 main{
     display: flex;
     flex-wrap: wrap;
