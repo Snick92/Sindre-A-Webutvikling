@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<hmtl lang="nb">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" conent="width=device-width, intital-scale=1.0">
+        <link rel="stylesheet" href="C:\Users\andre\OneDrive\Skrivebord\GitHub\Repositories\Webutvikling\Sindre-A-Webutvikling\FLEX\CSS\style.css">
+        <title>Oppgave 1: Skjema</title>
+    </head>
+    <body>
+        <header>
+            <h1>Oppgave 1: Skjema</h1>
+        </header>
+        <main>
+            <form>
+                <label for="Navn">Navn: <input type="text" id="navn" name="navn" placeholder="Navn" pattern="[A-Za-zæøåÆØÅ ]{2,}" required></label>
+                <label for="E-post">E-post: <input type="email" id="e-post" name="E-post" placeholder="E-post" required></label>
+                <label for="Passsord">Passord: <input type="password" id="passord" name="passord" placeholder="passord" minlength="8" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" required></label>
+                <label for="Alder">Alder: <input type="number" id="alder" name="alder" placeholder="alder" type="numer" min="18" max="120" required></label>
+                <label for="Telefonnummer">Telefonnummer: <input type="number" id="telefonnummer" name="telefonnummer" placeholder="telefonnummer" pattern="[0-9]{8,12}" required></label>
+                <label for="Fødselsdato"> Fødselsdato: <input type="date" id="fødselsdato" name="fødselsdato" placeholder="Fødselsdato" max="2023-12-31" required></label>
+                <label for="Kjønn">Kjønn: <input type="radio" id="kjønn" name="kjønn" value="Mann" required> Mann <input type="radio" id="kjønn" name="kjønn" value="Kvinne" required> Kvinne</label>
+                <label for="Land">Land: <select id="land" name="land" required>
+                    <option value="Norge">Norge</option>
+                    <option value="Sverige">Sverige</option>
+                    <option value="Danmark">Danmark</option>
+                    <option value="Finland">Finland</option>
+                </select></label>
+                <label for="Personvern">Personvern: <input type="checkbox" id="personvern" name="personvern" placeholder="Personvern" required></label>
+                <label for="Send inn"><input type="submit" id="send-inn" name="send-inn" value="Send inn" placeholder="Send inn"></label>
+            </form>
+        </main>
+        <footer>
+            <p>Sindre K. Andreassen</p>
+        </footer>
+    </body>
+</hmtl>
